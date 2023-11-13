@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- main style -->
+    <link rel="stylesheet" href="content/style/style.css">
+    <title>side bar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="heading">Currency converter</h1>
+            <p class="currencies">
+                FROM : USD <br>
+                TO : EGP ,EUR ,SAR , GBP
+            </p>
+            <form id="taskData">
+                <div>
+                    <select id="type-currency" placeholder="Type Any Currency">
+                        <option value="USD">USD</option>
+                        <option value="EGP">EGP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="SAR">SAR</option>
+                        <option value="GBP">GBP</option>
+                    </select>
+                </div>
+                <div>
+                    <input id="data-input" type="number" placeholder="Type Any Number">
+                </div>
+                <div>
+                    <input type="submit" value="Change">
+                </div>
+            </form>
+        </div>
+        <div id="output">
+            <div class="card">
+                <h3 class="out-USD"></h3>
+            </div>
+            <div class="card">
+                <h3 class="out-EGP"></h3>
+            </div>
+            <div class="card">
+                <h3 class="out-EUR"></h3>
+            </div>
+            <div class="card">
+                <h3 class="out-SAR"></h3>
+            </div>
+            <div class="card">
+                <h3 class="out-GBP">EGP</h3>
+            </div>
+        </div>
+    </div>
+    <script src="content/js/app.js"></script>
+</body>
+</html>

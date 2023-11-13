@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+}
+.container{
+    background: rgb(84,2,248);
+    background: linear-gradient(90deg, rgba(84,2,248,1) 0%, rgba(239,16,254,1) 100%);
+    text-align: center;
+    height: 100vh;
+}
+.heading{
+    font-size: 50px;
+    font-weight: lighter;
+    padding: 15px 0;
+}
+.currencies{
+    color: #ffff;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.3;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+form input, 
+select{
+    width: 50%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+form input[type="submit"]{
+    background-color: rgb(24, 120, 255);
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+}
+form input[type="submit"]:hover{
+    transform: scale(1.1);
+    background-color: rgb(4, 109, 255);
+}
+#output .card{
+    padding: 15px 10px;
+    width: 60%;
+    margin: 10px auto;
+    background-color: rgb(4, 109, 255);
+    border-radius: 5px;
+    text-align: left;
+    color: #fff;
+    display: none;
+}
+#output .card.show-currency{
+    display: block;
+}
